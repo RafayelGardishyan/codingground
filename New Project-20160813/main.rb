@@ -14,9 +14,34 @@ print "Your first name is #{name}, your last name is #{last} and you were born o
 ok = gets.chomp.downcase
 
 if ok.include? "ok"
-    print "You are registred!\n"
+    print "You are registred!\n Now you can log in\n"
+    puts "Log in\n"
+    puts "Your name please"
+    log_in_name = gets.chomp
+    puts "Your password (birth date)"
+    pass = gets.chomp
+    pass = .capitalize!
+    
+    if pass.include? birth
+        print"You are logged in please type your tips here :"
+        tip = gets.chomp
+        print"Thanks for using our service."
+    else
+        puts"Try again"
+        puts "Log in\n"
+        puts "Your name please"
+        log_in_name = gets.chomp
+        puts "Your password (birth date)"
+        pass = gets.chomp
+        pass = .capitalize!
+    
+        if pass.include? birth
+            print"You are logged in please type your tips here :"
+            tip = gets.chomp
+            print"Thanks for using our service."
+        else
+            puts"Your account is removed!"
+        end    
 else
     print "Try again!\n"
 end
-
-puts"Thanks for using our service\n"
