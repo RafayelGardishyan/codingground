@@ -41,8 +41,8 @@ if ok.include? "ok"
             print"Thanks for using our service."
         else
             puts"Your account is removed!"
-        end    
+        end  
+    end
 else
     print "Try again!\n"
 end
-
