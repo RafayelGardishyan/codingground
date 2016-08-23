@@ -20,7 +20,7 @@ if ok.include? "ok"
     log_in_name = gets.chomp
     puts "Your password (birth date)"
     pass = gets.chomp
-    pass = .capitalize!
+    pass.capitalize!
     
     if pass.include? birth
         print"You are logged in please type your tips here :"
@@ -33,7 +33,7 @@ if ok.include? "ok"
         log_in_name = gets.chomp
         puts "Your password (birth date)"
         pass = gets.chomp
-        pass = .capitalize!
+        pass.capitalize!
     
         if pass.include? birth
             print"You are logged in please type your tips here :"
@@ -45,3 +45,4 @@ if ok.include? "ok"
 else
     print "Try again!\n"
 end
+
